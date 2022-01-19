@@ -310,7 +310,6 @@ p{
 #about .col-left{
     width: 250px;
     height: 360px;
-    background-color: black;
 }
 #about .col-right{
     width: 100%;
@@ -388,7 +387,7 @@ p{
 
 }
 #contact .contact-info h2{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     font-weight: 500;
 }
@@ -510,6 +509,60 @@ p{
         height: 100%;
     }
 
+    /* About section */
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after{
+        left: -40px;
+        top: 33px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+
+    /* Contact */
+    #contanct .contact{
+        flex-direction: column;
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+    #contact .contact-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 20px;
+    }
+    #contact .contact-item{
+        margin: 20px;
+    }
+    #contact .contact-item .icon{
+        height: 80px;
+        width: 80px;
+    }
+    #contact .contact-item .icon img{
+        object-fit: contain;
+    }
+    #contact .contact-item .contact-info{      
+        text-align: center;
+        
+    }
+    /* End of contact */
 }
 
 /* End Media Query for tablet */
