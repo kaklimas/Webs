@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acne developers</title>
     <link rel="stylesheet" href="style.css">
-   
+    <script src="app.js"></script>
 </head>
 <body>
     <header>
@@ -27,19 +27,9 @@
 
     <section id="buttons">
         <div class="container">
-            <button class="button" type="button" onclick="click()">Click me</button>
-            <h1 class="h1">ELOO</h1>
+            <button type="button" class="button" onclick="showMessage()">Click me</button>
+            <p id="message"></p>
         </div>
     </section>
-
-
-    <script>
-        function click(){
-            alert(2);
-            document.querySelector('h1').style.color = 'black';
-
-        }
-        
-    </script>
 </body>
 </html>

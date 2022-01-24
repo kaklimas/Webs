@@ -55,6 +55,7 @@ header .container .branding h1 span{
 .button:hover{
     color: black;
     background-color: aqua;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 400px){
