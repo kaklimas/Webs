@@ -46,21 +46,6 @@ header .container .branding h1 span{
     align-items: center;
 }
 
-#sect3 .container .block{
-    width: 30%;
-    height: 40px;
-    background-color: white;
-    margin: 3px;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 8px;
-}
-#sect3 .container .block:hover{
-    background-color: crimson;
-    color: white;
-    cursor: pointer;
-}
-
 .c1_butt{
     width: 30%;
     margin: 3px;
@@ -84,10 +69,11 @@ header .container .branding h1 span{
     #showcase p{
         font-size: .8rem;
     }
-    #sect3 .container{
+    #sect3  .container {
         display: flex;
         flex-direction: column;
     }    
+    
     .c1_butt{
         width: 80%;
         height: 50px;
