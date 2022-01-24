@@ -34,12 +34,6 @@ header .container .branding h1 span{
 
 }
 
-.h1{
-    font-size: 1.4rem;
-    color: gray;
-    letter-spacing: 2px;
-}
-
 #buttons .container{
     width: 100%;
 
@@ -67,20 +61,20 @@ header .container .branding h1 span{
     cursor: pointer;
 }
 
-.button{
-    margin: 10px;
-    padding: 5px;
-    background-color: rgb(54, 51, 212);
-    border: none;
-    color: white;
+.c1_butt{
+    width: 30%;
+    margin: 3px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
 }
-.button:hover{
-    color: black;
-    background-color: aqua;
+.c1_butt:hover{
+    background-color: crimson;
+    color: white;
     cursor: pointer;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     header h1{
         font-size: 1.5rem;
     }
@@ -90,5 +84,13 @@ header .container .branding h1 span{
     #showcase p{
         font-size: .8rem;
     }
-    
+    #sect3 .container{
+        display: flex;
+        flex-direction: column;
+    }    
+    .c1_butt{
+        width: 80%;
+        height: 50px;
+        margin: 10px;
+    }
 }
