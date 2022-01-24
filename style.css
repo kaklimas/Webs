@@ -44,6 +44,28 @@ header .container .branding h1 span{
     width: 100%;
 
 }
+#sect3 .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sect3 .container .block{
+    width: 30%;
+    height: 40px;
+    background-color: white;
+    margin: 3px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 8px;
+}
+#sect3 .container .block:hover{
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
 
 .button{
     margin: 10px;
