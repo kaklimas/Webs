@@ -18,6 +18,7 @@ header .container{
 header .container .branding{
     width: 50%;
     align-items: right;
+
 }
 header .container .branding h1 span{
     color: crimson;
@@ -33,6 +34,7 @@ header .container .branding h1 span{
     letter-spacing: 1px;
 
 }
+
 
 #buttons .container{
     width: 100%;
@@ -62,22 +64,32 @@ header .container .branding h1 span{
 
 #paragraph .container{
     margin: 20px;
-    width: 80%;
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: 1fr 1fr;
+}
+
+#paragraph .container .text-block{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(220, 220, 220);
 }
 
 #paragraph .container h1, h2{
     font-weight: 500;
 }
-#paragraph .container h1{
+#paragraph .container .text-block h1{
     font-size: 1.4rem;
     margin-bottom: 10px;
     
 }
-#paragraph .container h2{
+#paragraph .container .text-block h2{
     font-size: 1rem;
     margin-bottom: 20px;
     text-align: justify;
 }
+
 
 
 @media screen and (max-width: 500px){
@@ -100,6 +112,17 @@ header .container .branding h1 span{
         height: 50px;
         margin: 10px;
     }
+    #paragraph .container{
+        grid-template-columns: 1fr;
+    }
+    #paragraph .container .text-block{
+        margin-bottom: 0;
+
+    }
+    #paragraph .container .text-block h1{
+        text-align: center;
+    }
+
     #paragraph .container h1{
         font-size: 1.1rem;
     }
