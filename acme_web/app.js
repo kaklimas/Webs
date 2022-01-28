@@ -12,7 +12,7 @@ function check(){
         h1.innerHTML = "login or password is empty";
     }
     else {
-        h1.innerHTML = "checking";
+        h1.innerHTML = "checking...";
     }
 
 
