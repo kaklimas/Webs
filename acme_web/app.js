@@ -11,6 +11,9 @@ function check(){
     if (login == '' || password == ''){
         h1.innerHTML = "login or password is empty";
     }
+    else if (login == '1' && password == '1'){
+        h1.innerHTML = "wow ur good";
+    }
     else {
         h1.innerHTML = "checking...";
     }
