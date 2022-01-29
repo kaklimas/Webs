@@ -15,14 +15,21 @@ export class BoardComponent implements OnInit {
   ngOnInit(): void {
     this.newGame();
   }
+
+  check(){
+    
+  }
+
   newGame(){
     this.squares = Array(9).fill(null);
     this.winner = "";
     this.xIsNext = true;
   }
+
   get_player(){
     return this.xIsNext ? 'X' : 'O';
   }
+
   makeMove(idx: number){
     if (!this.squares[idx]){
       this.squares.splice(idx, 1, this.get_player);
