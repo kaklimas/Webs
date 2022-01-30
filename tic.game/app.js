@@ -1,5 +1,6 @@
 let currentPlayer = "X";
 
+
 function draw(id) {
     let butt = document.getElementById(id).innerHTML
     let info = document.getElementById("info");
@@ -15,9 +16,11 @@ function draw(id) {
 
         if (isWin(previousPlayer)) {
             info.innerHTML = "Winner: " + previousPlayer;
+            endGame();
         } else {
             if (isDraw()){
                 info.innerHTML = "Draw!!!";
+                endGame();
             } else {
                 info.innerHTML = "Current move: " + currentPlayer;
             }
@@ -61,4 +64,14 @@ function isDraw(){
         if (document.getElementById(i).innerHTML == " ") return false;   
     }
     return true;
+}
+
+function startGame(){
+    for (let i = 1; i < 10; i++){
+        document.getElementById(i).innerHTML = " ";
+    }
+}
+
+function endGame(){
+    
 }

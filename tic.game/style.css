@@ -35,3 +35,10 @@ button {
 h1 {
     font-weight: 500;
 }
+.replay_butt{
+    width: 100px;
+    height: 30px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
