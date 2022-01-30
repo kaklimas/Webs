@@ -26,11 +26,12 @@ function move(id) {
                 win_y++;
                 player_y.innerHTML = "Y wins: " + win_y;
             }
+            displayButtons();
 
         } else {
             if (isDraw()) {
                 info.innerHTML = "Draw!!!";
-
+                displayButtons();
 
             } else {
                 info.innerHTML = "Current move: " + currentPlayer;
@@ -79,10 +80,16 @@ function isDraw() {
 
 function startGame() {
     for (let i = 1; i < 10; i++) {
-        document.getElementById(i).innerHTML = " ";
+        button = document.getElementById(i);
+        button.innerHTML = " ";
+        button.removeAttribute('disabled');
     }
 }
 
-function endGame() {
-
+function displayButtons() {
+    for (let i = 1; i < 10; i++){
+        
+        document.getElementById(i).setAttribute('disabled', 'disabled');
+       
+    }
 }
