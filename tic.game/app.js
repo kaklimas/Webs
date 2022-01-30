@@ -79,6 +79,7 @@ function isDraw() {
 }
 
 function startGame() {
+    document.getElementById("info").innerHTML = "Current move: " + currentPlayer;
     for (let i = 1; i < 10; i++) {
         button = document.getElementById(i);
         button.innerHTML = " ";
@@ -95,6 +96,7 @@ function displayButtons() {
 }
 
 function newGame(){
+    currentPlayer = "X";
     let player_x = document.getElementById("x_wins");
     let player_y = document.getElementById("y_wins");
  
