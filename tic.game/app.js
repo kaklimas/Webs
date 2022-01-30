@@ -93,3 +93,12 @@ function displayButtons() {
        
     }
 }
+
+function newGame(){
+    let player_x = document.getElementById("x_wins");
+    let player_y = document.getElementById("y_wins");
+ 
+    startGame();
+    player_x.innerHTML = "X wins: 0";
+    player_y.innerHTML = "Y wins: 0";
+}
