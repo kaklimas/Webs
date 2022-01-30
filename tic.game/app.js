@@ -1,37 +1,48 @@
 let currentPlayer = "X";
+let round = 1;
+let win_x = 0;
+let win_y = 0;
 
-
-function draw(id) {
+function move(id) {
     let butt = document.getElementById(id).innerHTML
-    let info = document.getElementById("info");
-        
+    let player_x = document.getElementById("x_wins");
+    let player_y = document.getElementById("y_wins");
 
-    if (butt == " "){
+    if (butt == " ") {
         document.getElementById("feedback").innerHTML = " "
         let previousPlayer = currentPlayer;
-        
+
         document.getElementById(id).innerHTML = currentPlayer;
         if (currentPlayer == "X") currentPlayer = "O"
         else currentPlayer = "X"
 
         if (isWin(previousPlayer)) {
             info.innerHTML = "Winner: " + previousPlayer;
-            endGame();
+
+            if (previousPlayer == "X") {
+                win_x++;
+                player_x.innerHTML = "X wins: " + win_x;
+            } else {
+                win_y++;
+                player_y.innerHTML = "Y wins: " + win_y;
+            }
+
         } else {
-            if (isDraw()){
+            if (isDraw()) {
                 info.innerHTML = "Draw!!!";
-                endGame();
+
+
             } else {
                 info.innerHTML = "Current move: " + currentPlayer;
             }
-            
+
         }
 
     } else {
         document.getElementById("feedback").innerHTML = "Place is already taken"
     }
-    
-    
+
+
 }
 
 function isWin(player) {
@@ -59,19 +70,19 @@ function isWin(player) {
     }
     return false;
 }
-function isDraw(){
-    for (let i = 1; i < 10; i++){
-        if (document.getElementById(i).innerHTML == " ") return false;   
+function isDraw() {
+    for (let i = 1; i < 10; i++) {
+        if (document.getElementById(i).innerHTML == " ") return false;
     }
     return true;
 }
 
-function startGame(){
-    for (let i = 1; i < 10; i++){
+function startGame() {
+    for (let i = 1; i < 10; i++) {
         document.getElementById(i).innerHTML = " ";
     }
 }
 
-function endGame(){
-    
+function endGame() {
+
 }

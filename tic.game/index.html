@@ -18,35 +18,40 @@
         <div class="container">
             <div class="board">
                 <div class="square">
-                    <button id="1" onclick="draw('1')"> </button>
+                    <button id="1" onclick="move('1')"> </button>
                 </div>
                 <div class="square">
-                    <button id="2" onclick="draw('2')"> </button>
+                    <button id="2" onclick="move('2')"> </button>
                 </div>
                 <div class="square">
-                    <button id="3" onclick="draw('3')"> </button>
+                    <button id="3" onclick="move('3')"> </button>
                 </div>
                 <div class="square">
-                    <button id="4" onclick="draw('4')"> </button>
+                    <button id="4" onclick="move('4')"> </button>
                 </div>
                 <div class="square">
-                    <button id="5" onclick="draw('5')"> </button>
+                    <button id="5" onclick="move('5')"> </button>
                 </div>
                 <div class="square">
-                    <button id="6" onclick="draw('6')"> </button>
+                    <button id="6" onclick="move('6')"> </button>
                 </div>
                 <div class="square">
-                    <button id="7" onclick="draw('7')"> </button>
+                    <button id="7" onclick="move('7')"> </button>
                 </div>
                 <div class="square">
-                    <button id="8" onclick="draw('8')"> </button>
+                    <button id="8" onclick="move('8')"> </button>
                 </div>
                 <div class="square">
-                    <button id="9" onclick="draw('9')"> </button>
+                    <button id="9" onclick="move('9')"> </button>
                 </div>
                 
             </div>
             <button class="replay_butt" onclick="startGame()">Replay!!!</button>
+        </div>
+
+        <div class="container" style="flex-direction: row;">
+            <h1 id="x_wins" style="margin-right: 100px;">X wins: 0</h1>
+            <h1 id="y_wins">Y wins: 0</h1>
         </div>
         
     </div>
