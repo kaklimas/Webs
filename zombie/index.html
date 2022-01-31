@@ -11,13 +11,20 @@
 <body>
     <!-- Menu -->
     <div id="menu">
-        <button type="button">New Game</button>
+        <button id="display_butt" type="button" onclick="display()">New Game</button>
         <button type="button">Stats</button>
         <button id="display-butt" type="button" onclick="display()">Show</button>
 
+        
+    </div>
+    <div id="form">
         <form id="form1" style="display:none">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <label for="login">Login</label>
+            <input type="login" name="login" id="login">
+            <a href="game.html">
+                <button type="submit">Start</button>
+            </a>
+            
         </form>
     </div>
 </body>
