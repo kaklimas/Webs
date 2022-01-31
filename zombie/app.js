@@ -10,3 +10,8 @@ function display(){
     form1.style.display = 'block'
     document.i
 }
+
+function logIn(){
+    let login = document.getElementById("login");
+    
+}
