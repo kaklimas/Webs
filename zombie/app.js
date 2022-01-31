@@ -1,16 +1,12 @@
+let array1 = new Array(["banana", 2], ["orange", 1], ["juice", -4])
+console.log(array1);
+console.log(array1.sort(function(a,b){
+    return a[1] - b[1];
+}))
 
 
 function display(){
-    let display_butt = document.getElementById("display-butt");
     let form1 = document.getElementById("form1");
-
-
-    if (display_butt.innerHTML == "Show"){
-        display_butt.innerHTML = "Hide";
-        form1.style.display = 'block';
-    } else {
-        display_butt.innerHTML = "Show";
-        form1.style.display = 'none';
-        
-    }
+    form1.style.display = 'block'
+    document.i
 }
