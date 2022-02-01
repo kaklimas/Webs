@@ -86,6 +86,11 @@ body{
     outline: none;
     cursor: pointer;
 }
+.product-bottom button:hover{
+    color: white;
+    background: #008394;
+    transition: .5s;
+}
 
 .color-select{
     display: flex;
