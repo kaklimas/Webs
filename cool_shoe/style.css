@@ -18,3 +18,9 @@ body{
     margin: auto;
     background: #000;
 }
+
+.product{
+    width: 400px;
+    height: 550px;
+    background: #ccc;
+}
