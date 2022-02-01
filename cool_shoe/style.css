@@ -16,6 +16,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: auto;
+    overflow: hidden;
 }
 
 .product{
@@ -140,4 +141,23 @@ body{
     transform: rotateY(-90deg);
     left: auto;
     right: -25px;
+}
+#frontImg{
+    width: 340px;
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    transform: translateZ(50px);
+    transition: 1s;
+    z-index: 100;
+}
+
+#backImg{
+    width: 340px;
+    top: 70px;
+    left: -650px;
+    position: absolute;
+    transform: translateZ(50px) rotate(-30deg);
+    transition: 1s;
+    z-index: 100;
 }
