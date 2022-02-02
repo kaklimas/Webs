@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header{
+    height: 100%;
+    background-image:  url("travel_site_img.banner1.jpg");
+    background: black;
+
+}
