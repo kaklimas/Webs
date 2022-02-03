@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <div class="container">
@@ -28,9 +29,9 @@
                 <p>Lorem ipsum dolor sit amet.</p>
                 
                 <div class="right-buttons">
-                    <button type="button" style="background: black"></button>
-                    <button type="button" style="background: crimson;"></button>
-                    <button type="button" style="background: rgb(102, 102, 211);"></button>
+                    <button type="button" style="background: black" onclick="change('black')"></button>
+                    <button id="test" type="button" style="background: crimson;" onclick="change('crimson')"></button>
+                    <button type="button" style="background: rgb(102, 102, 211);" onclick="change('rgb(102, 102, 211)')"></button>
                 </div>
                 
             </div>
