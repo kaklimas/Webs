@@ -18,11 +18,14 @@ body{
     height: 400px;
     display: flex;
     flex-direction: row;
+
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
 }
 
 .container .left-side-box{
-    width: 60%;
-    border: 1px solid black;  
+    width: 60%;  
     border-right: none;     
     display: flex;
     flex-direction: column;
@@ -31,8 +34,31 @@ body{
 
 .container .right-side-box{
     width: 40%;
-    border: 1px solid black;       
+    display: flex;
+    flex-direction: column;     
 }
+.container .right-side-box .content{
+    height: 65%;
+    width: 100%;
+    background-color: black;
+}
+.container .right-side-box .buttons{
+    padding: 10px;
+    text-align: justify;
+}
+
+.container .right-side-box .buttons{
+    height: 35%;
+    width: 100%;
+    background-color: orange;
+}
+.container .right-side-box .buttons .right-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
 .container .left-side-box .img-box{
     width: 100%;
@@ -47,6 +73,10 @@ body{
     height: 70%;
     background-color: red;
 }
+.container .left-side-box .description{
+    margin-top: 10px;
+}
+
 
 @media only screen and (max-width: 750px){
     .container{
