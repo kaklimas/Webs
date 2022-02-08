@@ -99,7 +99,7 @@ button:hover{
 .container .left-side-box .img-box #img{
     width: 90%;
     height: 70%;
-    background-color: red;
+    background-color: crimson;
     transition: .4s;
 }
 
